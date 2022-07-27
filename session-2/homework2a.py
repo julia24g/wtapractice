@@ -11,19 +11,18 @@ def subarray_sum(nums):
 
     return False
 
+#Test Case 1
 nums = [-1, -2, 3, 4, 5]
 print(subarray_sum(nums))
 
-#option 2
+#Test Case 2
+nums = [3, -7, 4, 3, -1]
+print(subarray_sum(nums))
 
-# def subarray_zero_sum(nums):
+#Test Case 3
+nums = [1, 2, 3, 4, 5]
+print(subarray_sum(nums))
 
-#     for x in range(1, len(nums)):
-#         if ((nums[x] > 0 and nums[x-1] < 0) or (nums[x] < 0 and nums[x-1] > 0)):
-#             nums[x] += nums[x-1]
-#         if nums[x] == 0:
-#             return True
-#     return False
-            
-# nums = [-3, -3, 6, 1, 6]
-# print(subarray_zero_sum(nums))
+#Test Case 4
+nums = [1, 2, 3, 0, 5]
+print(subarray_sum(nums))
